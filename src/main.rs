@@ -30,7 +30,7 @@ fn main() {
         .lines()
         .map(|ln| ln.split(", ").collect::<Vec<_>>())
         .map(|ln| {
-            let name = ln[0].split(".").collect::<Vec<_>>();
+            let name = ln[0].split('.').collect::<Vec<_>>();
             File {
                 name: Name(name[0].to_string(), name[1].to_string()),
                 city: City(ln[1].to_string()),
